@@ -8,8 +8,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// MongoDB connection
-mongoose.connect('mongodb://localhost:27017/mysticpathways', {
+
+// MongoDB connection (use env variable for deployment)
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/mysticpathways';
+mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -129,6 +131,16 @@ app.post('/api/places', async (req, res) => {
     } catch (err) {
         res.status(400).json({ error: err.message });
     }
+});
+
+
+// Serve static files (frontend) from project root
+const path = require('path');
+app.use(express.static(path.join(__dirname, '../')));
+
+// SPA support: send index.html for unknown routes
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
