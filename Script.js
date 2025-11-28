@@ -1,22 +1,61 @@
-// Enhanced form validation for login
-document.getElementById('loginForm')?.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    if (username && password) {
-        alert('Login successful! (This is a demo)');
-        this.style.transform = 'scale(1.05)';
-        setTimeout(() => this.style.transform = 'scale(1)', 300);
-    } else {
-        alert('Please fill in all fields.');
-    }
+
+
+// Login form AJAX
+if (document.getElementById('loginForm')) {
+    document.getElementById('loginForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const email = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        if (email && password) {
+            try {
+                const res = await fetch('http://localhost:5000/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    alert('Login successful!');
+                } else {
+                    alert(data.error || 'Login failed');
+                }
+            } catch (err) {
+                alert('Error connecting to server');
+            }
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
 }
 
-// Form validation for registration
-document.getElementById('registrationForm')?.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const contact = document.getElementById('contact').value;
-    const whatsapp = document.getElement
+// Registration form AJAX
+if (document.getElementById('registrationForm')) {
+    document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const contact = document.getElementById('contact').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+        const password = document.getElementById('password').value;
+        if (name && email && contact && whatsapp && password) {
+            try {
+                const res = await fetch('http://localhost:5000/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, contact, whatsapp, password })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    alert('Registration successful!');
+                } else {
+                    alert(data.error || 'Registration failed');
+                }
+            } catch (err) {
+                alert('Error connecting to server');
+            }
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+}
     
