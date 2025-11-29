@@ -136,11 +136,11 @@ app.post('/api/places', async (req, res) => {
 
 // Serve static files (frontend) from project root
 const path = require('path');
-app.use(express.static(path.join(__dirname, '../')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // SPA support: send index.html for unknown routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../Index.html'));
+    res.sendFile(path.join(__dirname, '../public/Index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
