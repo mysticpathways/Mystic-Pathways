@@ -1,4 +1,4 @@
-// Login form AJAX
+// Login form
 if (document.getElementById('loginForm')) {
     document.getElementById('loginForm').addEventListener('submit', async function(event) {
         event.preventDefault();
@@ -26,7 +26,7 @@ if (document.getElementById('loginForm')) {
     });
 }
 
-// Registration form AJAX
+// Registration form
 if (document.getElementById('registrationForm')) {
     document.getElementById('registrationForm').addEventListener('submit', async function(event) {
         event.preventDefault();
