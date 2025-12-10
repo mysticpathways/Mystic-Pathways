@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Pathways - Your Journey</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex;justify-content: flex-start;"><img src="MP Logo.jpg" alt="Logo" id="Symbol" ></div>
+        <h1>Mystic Pathway</h1>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Places.html">Places</a>
+            <a href="Services.html">Services</a>
+            <a href="Reviews.html">Reviews</a>
+            <a href="About.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="page-section">
+            <h2>Your Mystic Journey</h2>
+            <div class="content-card" id="userWelcomeCard">
+                <p id="userWelcomeText">Welcome back, traveller.</p>
+                <p id="userDetailsText"></p>
+            </div>
+
+            <div class="content-card" style="margin-top: 1.5rem;">
+                <h3>Mark Your Visited Places & Share Feedback</h3>
+                <p>Select a place you have visited, write a short review or feeling, and save it to your profile on this PC.</p>
+                <div style="margin-top: 0.8rem; display: grid; gap: 0.6rem; max-width: 520px;">
+                    <label for="userPlaceSelect">Visited place</label>
+                    <select id="userPlaceSelect">
+                        <option value="">Choose a place...</option>
+                        <option value="DevDari">DevDari</option>
+                        <option value="Sarnath">Sarnath</option>
+                        <option value="Mahoba Rock Paintings & Suraj Kund">Mahoba Rock Paintings & Suraj Kund</option>
+                        <option value="Surha Taal Lake (Ballia District)">Surha Taal Lake (Ballia District)</option>
+                    </select>
+                    <label for="userReviewText">Your review / feedback</label>
+                    <textarea id="userReviewText" rows="3" placeholder="Write what you felt, what you liked, or any suggestions..." style="resize: vertical;"></textarea>
+                    <label for="userRatingSelect">How was your experience?</label>
+                    <select id="userRatingSelect">
+                        <option value="">Select rating...</option>
+                        <option value="5">Excellent</option>
+                        <option value="4">Very Good</option>
+                        <option value="3">Good</option>
+                        <option value="2">Average</option>
+                        <option value="1">Needs Improvement</option>
+                    </select>
+                    <button id="userSaveReview" type="button">Save My Feedback</button>
+                </div>
+            </div>
+
+            <div class="content-card" style="margin-top: 1.5rem;">
+                <h3>Your Saved Reviews</h3>
+                <p style="margin-bottom: 0.5rem;">These reviews are stored only on this PC and linked to your registered account.</p>
+                <div id="userReviewsList"></div>
+            </div>
+        </section>
+    </main>
+    <script src="Script.js"></script>
+</body>
+</html>

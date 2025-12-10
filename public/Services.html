@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystic Pathway - Services</title>
+    <title>Mystic Pathways - Services</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -21,16 +21,30 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="page-section">
             <h2>Our Services</h2>
-            <ul>
-                <li>Customized Tour Packages</li>
-                <li>Guided Mystical Adventures</li>
-                <li>Accommodation Bookings</li>
-                <li>Transportation Arrangements</li>
-                <li>Hotels, Wages</li>
-                <li>24X7 Customer Support</li>
-            </ul>
+            <div class="content-card">
+                <!-- Static fallback list -->
+                <ul id="staticServicesList">
+                    <li>Customized Tour Packages</li>
+                    <li>Guided Mystical Adventures</li>
+                    <li>Accommodation Bookings</li>
+                    <li>Transportation Arrangements</li>
+                    <li>Hotels, Wages</li>
+                    <li>24X7 Customer Support</li>
+                </ul>
+
+                <!-- Dynamic services from backend will be injected here if available -->
+                <div id="servicesDynamic" style="margin-top: 1rem;"></div>
+            </div>
+            <div class="content-card" style="margin-top: 1.5rem;">
+                <h3 id="serviceDetailTitle">Need a Custom Mystic Journey?</h3>
+                <p id="serviceDetailText">Click on any service above to see more details and ways to enquire, or tell us what kind of experience you want – peaceful temples, waterfalls, lake retreats or complete family packages – and we will design it for you.</p>
+                <div style="margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                    <a id="serviceEmailLink" href="mailto:mysticpathways2@gmail.com?subject=Mystic%20Pathway%20-%20Service%20Enquiry" class="cta-link-button">Email Our Team</a>
+                    <a id="serviceWhatsAppLink" href="https://wa.me/911234567890?text=I%20want%20to%20plan%20a%20mystic%20journey" target="_blank" rel="noopener" class="cta-link-button">Chat on WhatsApp</a>
+                </div>
+            </div>
         </section>
     </main>
     <script src="Script.js"></script>

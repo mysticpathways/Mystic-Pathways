@@ -9,7 +9,7 @@
 <body>
     <header>
         <div style="display: flex;justify-content: flex-start;"><img src="MP Logo.jpg" alt="Logo" id="Symbol" ></div>
-        <h1>Mystic Pathway</h1>
+        <h1>Mystic Pathways</h1>
         <nav>
             <a href="Index.html">Home</a>
             <a href="Login.html">Login</a>
@@ -21,17 +21,18 @@
         </nav>
     </header>
     <main>
-        <section id="login-form">
+        <section id="login-form" class="page-section">
             <h2>Login to Your Account</h2>
-            <form id="loginForm">
-                <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="Enter Your Email">
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Enter Your Password">
-                <br><br>
-                <button type="submit">Login</button>
-            </form>
+            <div class="content-card">
+                <form id="loginForm">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Enter Your Email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter Your Password">
+                    <br><br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </section>
     </main>
     <script src="Script.js"></script>

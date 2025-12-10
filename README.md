@@ -1,5 +1,5 @@
-Mystic Pathway is a digital bridge connecting tourists with indigenous communities and local NGOs working to preserve culture and promote sustainable tourism. The platform offers travelers authentic local experiences — from traditional crafts and cuisine to guided cultural tours — while empowering indigenous people to share their heritage and earn fair income.
+Mystic Pathways is a digital bridge connecting tourists with indigenous communities and local NGOs working to preserve culture and promote sustainable tourism. The platform offers travelers authentic local experiences — from traditional crafts and cuisine to guided cultural tours — while empowering indigenous people to share their heritage and earn fair income.
 
-With the support of verified NGOs, Mystic Pathway ensures ethical, safe, and community-driven tourism, making every journey meaningful for both visitors and hosts. By blending technology with tradition, it opens the door to a more connected, responsible, and culturally rich travel experience.
+With the support of verified NGOs, Mystic Pathways ensures ethical, safe, and community-driven tourism, making every journey meaningful for both visitors and hosts. By blending technology with tradition, it opens the door to a more connected, responsible, and culturally rich travel experience.
 
-In short, Mystic Pathway enables travelers to go beyond sightseeing — allowing them to become part of a positive change by supporting communities that preserve our shared heritage.
+In short, Mystic Pathways enables travelers to go beyond sightseeing — allowing them to become part of a positive change by supporting communities that preserve our shared heritage.

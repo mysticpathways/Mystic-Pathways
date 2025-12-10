@@ -9,7 +9,7 @@
 <body>
     <header>
         <div style="display: flex;justify-content: flex-start;"><img src="MP Logo.jpg" alt="Logo" id="Symbol" ></div>
-        <h1>Mystic Pathway</h1>
+        <h1>Mystic Pathways</h1>
         <nav>
             <a href="Index.html">Home</a>
             <a href="Login.html">Login</a>
@@ -22,10 +22,10 @@
     </header>
     <main>
         <section id="hero">
-            <h2>Welcome to Mystic Pathway</h2>
+            <h2>Welcome to Mystic Pathways</h2>
             <p>Discover mystical destinations and embark on unforgettable journeys.</p>
             <p>Walk the Mystic Path-"Where Culture Meets compassion."</p>
-            <button>Explore Now</button>
+            <button id="exploreButton">Explore Now</button>
         </section>
         <section>
             <h2>Featured Destinations</h2>
@@ -40,6 +40,30 @@
             <div class="place">
                 <h3>Surha Taal Lake (Ballia District)</h3>
                 <p>one of the best and mystical lake located in the Ballia District</p>
+            </div>
+        </section>
+
+        <section id="traveller-guide">
+            <div class="traveller-card">
+                <div class="traveller-avatar"></div>
+                <div class="traveller-info">
+                    <h2>Meet the Mystic Traveller</h2>
+                    <p>Ask someone who has already walked these paths. Our seasoned traveller shares real experiences, tips, and hidden gems.</p>
+                </div>
+                <div class="traveller-chat" id="travellerChat">
+                    <div class="chat-window" id="chatWindow">
+                        <div class="chat-bubble guide">Namaste! I am your Mystic Traveller. Ask me anything about these destinations.</div>
+                    </div>
+                    <div class="question-pills">
+                        <button class="question-pill" data-question="Best time to visit?">Best time to visit?</button>
+                        <button class="question-pill" data-question="Is it family friendly?">Is it family friendly?</button>
+                        <button class="question-pill" data-question="Hidden spots to see?">Hidden spots to see?</button>
+                    </div>
+                    <div class="traveller-input-row">
+                        <input type="text" id="travellerInput" placeholder="Ask the traveller anything...">
+                        <button id="travellerSend">Send</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
