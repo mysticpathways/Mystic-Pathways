@@ -10,7 +10,11 @@ app.use(bodyParser.json());
 
 
 // MongoDB connection (use env variable for deployment)
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/mysticpathways';
+const mongoURI = process.env.MONGODB_URI;
+if (!mongoURI) {
+    console.error('MONGODB_URI environment variable is not set');
+    process.exit(1);
+}
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
